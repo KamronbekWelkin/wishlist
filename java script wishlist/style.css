@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.header{
+    background-color: #d5d5d5;
+    box-sizing: border-box;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#filter{
+    margin: 10px;
+}
+
+.article{
+    height: 100%;
+    width: 460px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: none;
+    box-shadow: 0px 10px 70px rgba(55, 89, 236, 0.2);
+}
+
+.article p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button {
+    background: transparent;
+    padding: 0;
+    border: none;
+    outline: none;
+  }
+  form {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  form input {
+    color: #3759ec;
+    font-size: 18px;
+    width: calc(100% - 80px);
+    height: 60px;
+    padding: 0 25px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0 40px rgba(55, 89, 236, 0.2);
+    outline: none;
+  }
+  form input::placeholder {
+    color: #abbaf7;
+  }
+  form button {
+    background: #3759ec;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+  }
+  form button:active {
+    background: #102ead;
+  }
+  form button i {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
+
+   ul {
+    height: 500px;
+    overflow: auto visible;
+    margin: 0;
+    padding: 25px 0 0 0;
+  }
+   li {
+    position: relative;
+    color: #3759ec;
+    font-size: 18px;
+    list-style: none;
+    line-height: 1.3em;
+    width: 85%;
+    margin: 0 auto 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0 40px rgba(55, 89, 236, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+   li:last-child {
+    margin-bottom: 0;
+  }
+  li button{
+    position: absolute;
+    color: rgb(255, 0, 0);
+    right: 25px;
+    font-size: 18px;
+  }
+   li.done {
+    color: #fff;
+    background: #3759ec;
+  }
+   li.done span::after {
+    width: calc(100% + 10px);
+  }
+   li.done i {
+    color: #fff;
+  }
+   li span {
+    position: relative;
+  }
+   li span::after {
+    content: '';
+    background: #fff;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    transition: .3s ease;
+  }
